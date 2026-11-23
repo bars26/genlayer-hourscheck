@@ -1,0 +1,431 @@
+{
+  "network": "studio",
+  "contract": "0x83ff5c32EC6dB1075854C2B37A709a3e44498c40",
+  "checker": "0xCebF5ceE979A74Bbae2B172791bDb0eB4e064443",
+  "labels": {
+    "node/348018690": "PizzaExpress, 450 Strand",
+    "node/694510208": "Wagamama, Tower Hill",
+    "node/299523381": "PizzaExpress, Baker Street",
+    "node/332117740": "PizzaExpress, Euston Road",
+    "node/14178896038": "PizzaExpress, Dean Street",
+    "node/264515720": "PizzaExpress, High Holborn (no opening_hours on OSM)",
+    "node/6381240591": "The Signal Box, Euston",
+    "node/12477919501": "Oma, Borough",
+    "node/1708718478": "Waitrose, Canary Wharf",
+    "node/14396853783": "Kolach (no website on OSM)"
+  },
+  "log": [
+    {
+      "who": "checker",
+      "call": "check(\"node\", \"348018690\")",
+      "value": "0",
+      "hash": "0x176555e03bbb6b5bf758dcc6f9dccc38c4b958837d9bb3a38d6ab52a06fe250a",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "VERIFIED"
+    },
+    {
+      "who": "checker",
+      "call": "check(\"node\", \"694510208\")",
+      "value": "0",
+      "hash": "0xfa581d463f0e52a1c2929723a3b8e20536422e3f2d77b1553efd8596b8fa767e",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "VERIFIED"
+    },
+    {
+      "who": "checker",
+      "call": "check(\"node\", \"299523381\")",
+      "value": "0",
+      "hash": "0x0171eaa0f62745d0e0081aa51bcc2450ae8d553142d6c768749ba227b34803df",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "VERIFIED"
+    },
+    {
+      "who": "checker",
+      "call": "check(\"node\", \"332117740\")",
+      "value": "0",
+      "hash": "0xcf88127a13c1e63cec0f251c58c2d3551bb1fc992ea70277f504c779b0b7cbe6",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "DIFFERS"
+    },
+    {
+      "who": "checker",
+      "call": "check(\"node\", \"14178896038\")",
+      "value": "0",
+      "hash": "0x3b397de5d6006f8d61cfb422c85f7be08f4a42b31ce2c6e6f2a9a4bacd080908",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "DIFFERS"
+    },
+    {
+      "who": "checker",
+      "call": "check(\"node\", \"264515720\")",
+      "value": "0",
+      "hash": "0x569ffe7893a26fe326e9c319239b91c6b7be7caefa88d0bd57ca814f3a9c8743",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "MISSING"
+    },
+    {
+      "who": "checker",
+      "call": "check(\"node\", \"6381240591\")",
+      "value": "0",
+      "hash": "0xec61f1ddd877beaf0c68a672161091a25f63f1ee08013bc2234451bb283430db",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "SOURCE_CONFLICT"
+    },
+    {
+      "who": "checker",
+      "call": "check(\"node\", \"12477919501\")",
+      "value": "0",
+      "hash": "0xe3e78d8df84cbad7d38f3bfce9ff486a5596ec763af9fb67ade332455577f849",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "SOURCE_NO_HOURS"
+    },
+    {
+      "who": "checker",
+      "call": "check(\"node\", \"1708718478\")",
+      "value": "0",
+      "hash": "0xa5eda50a7cabe49619ee5e2b7fda40dfa29a03bb9934ec2c4dc239eb717c9201",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "SOURCE_UNREADABLE"
+    },
+    {
+      "who": "checker",
+      "call": "check(\"node\", \"14396853783\")",
+      "value": "0",
+      "hash": "0xf869a57b1ca3203d527e6062327438dfa5c13449a1a3c9b7af38295266f31fc0",
+      "status": "ACCEPTED",
+      "exec": "SUCCESS",
+      "returned": "NO_SOURCE"
+    },
+    {
+      "who": "checker",
+      "call": "check(\"node\", \"348018690\")",
+      "value": "0",
+      "hash": "0x95a3e8df085ad54f13f3f6ca6207c8cba7f8d6f0699e07a4ad03490a023d499d",
+      "status": "ACCEPTED",
+      "exec": "ERROR",
+      "refused": "node/348018690 was checked at 2026-11-23 12:55:59 UTC; one element is checked at most every 10 minutes"
+    },
+    {
+      "who": "checker",
+      "call": "check(\"node\", \"99999999999\")",
+      "value": "0",
+      "hash": "0x672da62f193c0eb48517ededa044c3d99ad32b025011a73c2e1506919c767598",
+      "status": "ACCEPTED",
+      "exec": "ERROR",
+      "refused": "node/99999999999 does not exist on OpenStreetMap (or was deleted)"
+    },
+    {
+      "who": "checker",
+      "call": "check(\"shop\", \"1\")",
+      "value": "0",
+      "hash": "0x817d5bcc1185d4294ec7eacee0fa49c3d4fc29e866532375204782cb5328ae16",
+      "status": "ACCEPTED",
+      "exec": "ERROR",
+      "refused": "element_type must be node, way or relation"
+    }
+  ],
+  "is_open": [
+    {
+      "element": "node/348018690",
+      "day": "Fr",
+      "time": "22:45",
+      "answer": "open"
+    },
+    {
+      "element": "node/348018690",
+      "day": "Mo",
+      "time": "22:45",
+      "answer": "closed"
+    },
+    {
+      "element": "node/348018690",
+      "day": "Su",
+      "time": "11:00",
+      "answer": "closed"
+    },
+    {
+      "element": "node/694510208",
+      "day": "Sa",
+      "time": "22:30",
+      "answer": "open"
+    },
+    {
+      "element": "node/332117740",
+      "day": "Mo",
+      "time": "12:00",
+      "answer": "unknown"
+    },
+    {
+      "element": "node/6381240591",
+      "day": "Mo",
+      "time": "12:00",
+      "answer": "unknown"
+    }
+  ],
+  "checks": {
+    "node/348018690": {
+      "address": "450 The Strand WC2R 0RG London",
+      "checked_at": "2026-11-23T12:55:59",
+      "checked_by": "0xcebf5cee979a74bbae2b172791bdb0eb4e064443",
+      "edited_at": "2026-10-24T07:04:15",
+      "element": "node/348018690",
+      "name": "PizzaExpress",
+      "osm_hours": "Mo-We 11:30-22:30; Th-Sa 11:30-23:00; Su 11:30-22:00",
+      "osm_week": "Mo-We 11:30-22:30; Th-Sa 11:30-23:00; Su 11:30-22:00",
+      "page": {
+        "chars": 2061,
+        "quote": "Monday 11:30 - 22:30 Tuesday 11:30 - 22:30 Wednesday 11:30 - 22:30 Thursday 11:30 - 23:00 Friday 11:30 - 23:00 Saturday 11:30 - 23:00 Sunday 11:30 - 22:00",
+        "state": "ok",
+        "structured": "Mo-We 11:30-22:30; Th-Sa 11:30-23:00; Su 11:30-22:00",
+        "text_sha256": "ab250a56b0d510b6822c16d4ff5b903991cbb5e1a87625afb97e78a1635d4449",
+        "visible": "Mo-We 11:30-22:30; Th-Sa 11:30-23:00; Su 11:30-22:00",
+        "week": "Mo-We 11:30-22:30; Th-Sa 11:30-23:00; Su 11:30-22:00"
+      },
+      "source": "https://www.pizzaexpress.com/london-450-strand",
+      "status": "VERIFIED",
+      "version": 31
+    },
+    "node/694510208": {
+      "address": "Tower Place EC3R 5BT London",
+      "checked_at": "2026-11-23T12:56:27",
+      "checked_by": "0xcebf5cee979a74bbae2b172791bdb0eb4e064443",
+      "edited_at": "2026-10-24T07:04:18",
+      "element": "node/694510208",
+      "name": "Wagamama",
+      "osm_hours": "Mo-Th 11:00-22:00; Fr,Sa 11:00-23:00; Su 11:00-21:00",
+      "osm_week": "Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-21:00",
+      "page": {
+        "chars": 2370,
+        "quote": "monday 11:00 AM - 10:00 PM tuesday 11:00 AM - 10:00 PM wednesday 11:00 AM - 10:00 PM thursday 11:00 AM - 10:00 PM friday 11:00 AM - 11:00 PM saturday 11:00 AM - 11:00 PM sunday 11:00 AM - 9:00 PM",
+        "state": "ok",
+        "structured": "Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-21:00",
+        "text_sha256": "0370175d4e3b43422035eddb6f42431fd034cc05a9d5a1a6497866196eb0daa5",
+        "visible": "Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-21:00",
+        "week": "Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-21:00"
+      },
+      "source": "https://www.wagamama.com/restaurants/london/tower-hill",
+      "status": "VERIFIED",
+      "version": 19
+    },
+    "node/299523381": {
+      "address": "131-133 Baker Street W1U 6SF London",
+      "checked_at": "2026-11-23T12:56:56",
+      "checked_by": "0xcebf5cee979a74bbae2b172791bdb0eb4e064443",
+      "edited_at": "2026-11-15T20:37:19",
+      "element": "node/299523381",
+      "name": "PizzaExpress",
+      "osm_hours": "Mo-We 11:30-22:00; Th,Su 11:30-22:30; Fr-Sa 11:30-23:00",
+      "osm_week": "Mo-We 11:30-22:00; Th 11:30-22:30; Fr-Sa 11:30-23:00; Su 11:30-22:30",
+      "page": {
+        "chars": 2782,
+        "quote": "Monday 11:30 - 22:00 Tuesday 11:30 - 22:00 Wednesday 11:30 - 22:00 Thursday 11:30 - 22:30 Friday 11:30 - 23:00 Saturday 11:30 - 23:00 Sunday 11:30 - 22:30",
+        "state": "ok",
+        "structured": "Mo-We 11:30-22:00; Th 11:30-22:30; Fr-Sa 11:30-23:00; Su 11:30-22:30",
+        "text_sha256": "3530e0a37b34728e196ecf98dbac97a88a49f41b0e12e636136e32d6c9c6e584",
+        "visible": "Mo-We 11:30-22:00; Th 11:30-22:30; Fr-Sa 11:30-23:00; Su 11:30-22:30",
+        "week": "Mo-We 11:30-22:00; Th 11:30-22:30; Fr-Sa 11:30-23:00; Su 11:30-22:30"
+      },
+      "source": "https://www.pizzaexpress.com/london-baker-street",
+      "status": "VERIFIED",
+      "version": 26
+    },
+    "node/332117740": {
+      "address": "93 Euston Road NW1 2RA London",
+      "checked_at": "2026-11-23T12:57:24",
+      "checked_by": "0xcebf5cee979a74bbae2b172791bdb0eb4e064443",
+      "edited_at": "2026-10-24T07:04:12",
+      "element": "node/332117740",
+      "name": "PizzaExpress",
+      "osm_hours": "Mo,Tu 11:31-23:00, We-Fr 11:30-23:30, Sa,Su 11:30-23:00",
+      "osm_week": "Mo-Tu 11:31-23:00; We-Fr 11:30-23:30; Sa-Su 11:30-23:00",
+      "page": {
+        "chars": 1997,
+        "quote": "Monday 11:30 - 22:00 Tuesday 11:30 - 22:00 Wednesday 11:30 - 22:30 Thursday 11:30 - 22:30 Friday 11:30 - 23:00 Saturday 11:30 - 23:00 Sunday 11:30 - 22:00",
+        "state": "ok",
+        "structured": "Mo-Tu 11:30-22:00; We-Th 11:30-22:30; Fr-Sa 11:30-23:00; Su 11:30-22:00",
+        "text_sha256": "3e269120c0d21716de7892f288a891cfe2b078aa98ae16eb8a48fbed519e5c98",
+        "visible": "Mo-Tu 11:30-22:00; We-Th 11:30-22:30; Fr-Sa 11:30-23:00; Su 11:30-22:00",
+        "week": "Mo-Tu 11:30-22:00; We-Th 11:30-22:30; Fr-Sa 11:30-23:00; Su 11:30-22:00"
+      },
+      "source": "https://www.pizzaexpress.com/london-euston-road",
+      "status": "DIFFERS",
+      "version": 19
+    },
+    "node/14178896038": {
+      "address": "10 Dean Street W1D 3RW London",
+      "checked_at": "2026-11-23T12:57:52",
+      "checked_by": "0xcebf5cee979a74bbae2b172791bdb0eb4e064443",
+      "edited_at": "2026-10-24T07:04:58",
+      "element": "node/14178896038",
+      "name": "PizzaExpress",
+      "osm_hours": "Mo-Sa 11:30-23:00; Su 11:30-22:30",
+      "osm_week": "Mo-Sa 11:30-23:00; Su 11:30-22:30",
+      "page": {
+        "chars": 1889,
+        "quote": "Opening hours Monday 11:30 - 22:30 Tuesday 11:30 - 22:30 Wednesday 11:30 - 22:30 Thursday 11:30 - 22:30 Friday 11:30 - 23:00 Saturday 11:30 - 23:00 Sunday 11:30 - 22:00",
+        "state": "ok",
+        "structured": "Mo-Th 11:30-22:30; Fr-Sa 11:30-23:00; Su 11:30-22:00",
+        "text_sha256": "c4ad6147aa175a0358680d289f34593e69ffa22ae46bdd13a53acd358adfda29",
+        "visible": "Mo-Th 11:30-22:30; Fr-Sa 11:30-23:00; Su 11:30-22:00",
+        "week": "Mo-Th 11:30-22:30; Fr-Sa 11:30-23:00; Su 11:30-22:00"
+      },
+      "source": "https://www.pizzaexpress.com/london-dean-street",
+      "status": "DIFFERS",
+      "version": 2
+    },
+    "node/264515720": {
+      "address": "99 High Holborn WC1V 6LF London",
+      "checked_at": "2026-11-23T12:58:13",
+      "checked_by": "0xcebf5cee979a74bbae2b172791bdb0eb4e064443",
+      "edited_at": "2026-10-24T07:04:12",
+      "element": "node/264515720",
+      "name": "PizzaExpress",
+      "osm_hours": "",
+      "osm_week": "",
+      "page": {
+        "chars": 2294,
+        "quote": "Monday 11:30 - 22:00 Tuesday 11:30 - 22:00 Wednesday 11:30 - 22:00 Thursday 11:30 - 22:00 Friday 11:30 - 23:00 Saturday 11:30 - 23:00 Sunday 11:30 - 22:00",
+        "state": "ok",
+        "structured": "Mo-Th 11:30-22:00; Fr-Sa 11:30-23:00; Su 11:30-22:00",
+        "text_sha256": "a79cff6711ac0bde5a1128751061a7b1435c55bfac8376fa3b49a54f8f2f0572",
+        "visible": "Mo-Th 11:30-22:00; Fr-Sa 11:30-23:00; Su 11:30-22:00",
+        "week": "Mo-Th 11:30-22:00; Fr-Sa 11:30-23:00; Su 11:30-22:00"
+      },
+      "source": "https://www.pizzaexpress.com/london-high-holborn",
+      "status": "MISSING",
+      "version": 16
+    },
+    "node/6381240591": {
+      "address": "Eversholt Street NW1 2HS London",
+      "checked_at": "2026-11-23T12:58:48",
+      "checked_by": "0xcebf5cee979a74bbae2b172791bdb0eb4e064443",
+      "edited_at": "2026-11-16T20:51:25",
+      "element": "node/6381240591",
+      "name": "The Signal Box",
+      "osm_hours": "Mo-Sa 08:00-22:00; Su 09:00-21:00",
+      "osm_week": "Mo-Sa 08:00-22:00; Su 09:00-21:00",
+      "page": {
+        "chars": 4983,
+        "quote": "Monday 08:00 - 22:00 Tuesday 08:00 - 22:00 Wednesday 08:00 - 22:00 Thursday 08:00 - 22:00 Friday 08:00 - 22:00 Saturday 08:00 - 22:00 Sunday 09:00 - 21:00",
+        "state": "disagree",
+        "structured": "Mo-Sa 08:00-21:00; Su 09:00-20:00",
+        "text_sha256": "3284527621bc57a528579b66852f99831943a6524a06a568ccc06b3d6cad7d42",
+        "visible": "Mo-Sa 08:00-22:00; Su 09:00-21:00",
+        "week": ""
+      },
+      "source": "https://www.signalboxeuston.co.uk/",
+      "status": "SOURCE_CONFLICT",
+      "version": 10
+    },
+    "node/12477919501": {
+      "address": "2-4 Bedale Street SE1 9AL London",
+      "checked_at": "2026-11-23T12:59:16",
+      "checked_by": "0xcebf5cee979a74bbae2b172791bdb0eb4e064443",
+      "edited_at": "2026-11-14T12:34:50",
+      "element": "node/12477919501",
+      "name": "OMA",
+      "osm_hours": "Mo-Fr 12:00-15:00, 17:30-23:00; Sa 12:00-23:00; Su 12:00-22:00",
+      "osm_week": "Mo-Fr 12:00-15:00,17:30-23:00; Sa 12:00-23:00; Su 12:00-22:00",
+      "page": {
+        "chars": 303,
+        "quote": "",
+        "state": "no_hours",
+        "structured": "",
+        "text_sha256": "a5faa022cb492c96d8f7b562e424f480287257d4a98e93e507ca4cda108bf11c",
+        "visible": "",
+        "week": ""
+      },
+      "source": "https://www.oma.london/",
+      "status": "SOURCE_NO_HOURS",
+      "version": 4
+    },
+    "node/1708718478": {
+      "address": "16-19 Canada Square E14 5EW London",
+      "checked_at": "2026-11-23T12:59:44",
+      "checked_by": "0xcebf5cee979a74bbae2b172791bdb0eb4e064443",
+      "edited_at": "2026-11-06T17:56:59",
+      "element": "node/1708718478",
+      "name": "Waitrose",
+      "osm_hours": "Mo-Fr 07:00-22:00; Sa 08:00-21:00; Su 12:00-18:00",
+      "osm_week": "Mo-Fr 07:00-22:00; Sa 08:00-21:00; Su 12:00-18:00",
+      "page": {
+        "chars": "",
+        "quote": "",
+        "state": "unreadable",
+        "structured": "",
+        "text_sha256": "",
+        "visible": "",
+        "week": ""
+      },
+      "source": "https://www.waitrose.com/find-a-store/canary-wharf",
+      "status": "SOURCE_UNREADABLE",
+      "version": 23
+    },
+    "node/14396853783": {
+      "address": "23a Tavistock Place",
+      "checked_at": "2026-11-23T12:59:59",
+      "checked_by": "0xcebf5cee979a74bbae2b172791bdb0eb4e064443",
+      "edited_at": "2026-11-21T17:15:36",
+      "element": "node/14396853783",
+      "name": "Kolach",
+      "osm_hours": "08:00-17:00",
+      "osm_week": "Mo-Su 08:00-17:00",
+      "page": {},
+      "source": "",
+      "status": "NO_SOURCE",
+      "version": 3
+    }
+  },
+  "to_fix": [
+    {
+      "checked_at": "2026-11-23T12:57:24",
+      "element": "node/332117740",
+      "name": "PizzaExpress",
+      "osm_hours": "Mo,Tu 11:31-23:00, We-Fr 11:30-23:30, Sa,Su 11:30-23:00",
+      "page_week": "Mo-Tu 11:30-22:00; We-Th 11:30-22:30; Fr-Sa 11:30-23:00; Su 11:30-22:00",
+      "source": "https://www.pizzaexpress.com/london-euston-road",
+      "status": "DIFFERS"
+    },
+    {
+      "checked_at": "2026-11-23T12:57:52",
+      "element": "node/14178896038",
+      "name": "PizzaExpress",
+      "osm_hours": "Mo-Sa 11:30-23:00; Su 11:30-22:30",
+      "page_week": "Mo-Th 11:30-22:30; Fr-Sa 11:30-23:00; Su 11:30-22:00",
+      "source": "https://www.pizzaexpress.com/london-dean-street",
+      "status": "DIFFERS"
+    },
+    {
+      "checked_at": "2026-11-23T12:58:13",
+      "element": "node/264515720",
+      "name": "PizzaExpress",
+      "osm_hours": "",
+      "page_week": "Mo-Th 11:30-22:00; Fr-Sa 11:30-23:00; Su 11:30-22:00",
+      "source": "https://www.pizzaexpress.com/london-high-holborn",
+      "status": "MISSING"
+    }
+  ],
+  "stats": {
+    "by_status": {
+      "DIFFERS": 2,
+      "MISSING": 1,
+      "NO_SOURCE": 1,
+      "SOURCE_CONFLICT": 1,
+      "SOURCE_NO_HOURS": 1,
+      "SOURCE_UNREADABLE": 1,
+      "UNPARSED": 0,
+      "VERIFIED": 3
+    },
+    "checks": 10,
+    "elements": 10
+  }
+}
